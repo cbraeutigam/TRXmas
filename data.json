@@ -1,0 +1,18 @@
+{
+    "compliment_yes": {
+        "content": "konsequenztext bei compliment yes",
+        "flag": "compliment_yes",
+        "image": "img/sam_dress.png",
+        "btn1": "naechste entscheidung A",
+        "btn2": "naechste entscheidung B"
+        "salara": "-1"
+    },
+    "compliment_no": {
+        "content": "konsequenztext bei compliment no",
+        "flag": "compliment_no",
+        "image": "img/grumpyAndTheBiest.jpg",
+        "btn1": "naechste entscheidung A",
+        "btn2": "naechste entscheidung B"
+        "salara": "1"
+    }
+}    
