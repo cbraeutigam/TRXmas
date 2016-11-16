@@ -30,22 +30,13 @@ $('.navbar-collapse ul li a').click(function() {
 var compliment_yes = false;
 var compliment_no = false;
 
-
-
-
 $(document).ready(function () {
-
-    $('.plot').click(function() {
-        var id = $(this).attr('data-attr');
+    
+     $('.plot').click(function() {
+          var id = $(this).attr('data-attr');
         var flag = $(this).attr('data-flag');
 
         console.log(id, flag);
-
-        /*   $.getJSON( "data.json", function( data ) {
-       console.log('yea');
-        console.log(data);
-    });*/
-
 
         $.ajax({
             type: 'GET',
@@ -55,11 +46,9 @@ $(document).ready(function () {
             success: function (data) {
                 console.log(data);
             },
-            error: function(error) {
-
-            }
+            error: function(error) {}
         });
-
-    });
+         
+     });
 
 });
