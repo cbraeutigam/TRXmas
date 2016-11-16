@@ -41,7 +41,7 @@ $(document).ready(function () {
 
         console.log(id, flag);
 
-/*   $.getJSON( "data.json", function( data ) {
+        /*   $.getJSON( "data.json", function( data ) {
        console.log('yea');
         console.log(data);
     });*/
@@ -53,14 +53,13 @@ $(document).ready(function () {
             data: data,
             dataType: 'json',
             success: function (data) {
-            console.log(data);
-        },
-               error: function(error) {
+                console.log(data);
+            },
+            error: function(error) {
 
-        }
+            }
+        });
+
     });
-
- 
-
 
 });
