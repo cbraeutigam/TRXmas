@@ -1,18 +1,72 @@
 {
-    "compliment_yes": {
-        "content": "konsequenztext bei compliment yes",
-        "flag": "compliment_yes",
-        "image": "img/sam_dress.png",
-        "btn1": "naechste entscheidung A",
-        "btn2": "naechste entscheidung B"
-        "salara": "-1"
+    "CarKissPos": {
+        "content": "Einleitungstext bis zur Kleidungsentscheidung. <br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata",
+        "btndec1": {
+            "content": "Lara zieht Kleidung an",
+            "id": "KleidungKonsequenzPos"
+        },
+        "btndec2": {
+            "content": "Lara lehnt ab",
+            "id": "KleidungKonsequenzNeg"
+        }
     },
-    "compliment_no": {
-        "content": "konsequenztext bei compliment no",
-        "flag": "compliment_no",
-        "image": "img/grumpyAndTheBiest.jpg",
-        "btn1": "naechste entscheidung A",
-        "btn2": "naechste entscheidung B"
+    "CarKissNeg": {
+        "content": "Einleitungstext bis zur Kleidungsentscheidung. <br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata",
+        "btndec1": {
+            "content": "Lara zieht Kleidung an",
+            "id": "KleidungKonsequenzPos"
+        },
+        "btndec2": {
+            "content": "Lara lehnt ab",
+            "id": "KleidungKonsequenzNeg"
+        }
+    },
+    "ZimmerEinleitung": {
+        "content": "Einleitungstext bis zur Kleidungsentscheidung. <br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata",
+        "btndec1": {
+            "content": "Lara zieht Kleidung an",
+            "id": "KleidungKonsequenzPos"
+        },
+        "btndec2": {
+            "content": "Lara lehnt ab",
+            "id": "KleidungKonsequenzNeg"
+        }
+    },
+    "KleidungKonsequenzPos": {
+        "content": "KleidungKonsequenzPos Text bis zur Komplimententscheidung. <br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata",
+        "flag": "true",
+        "image": "/img/sam_dress.png",
+        "btndec1": {
+            "content": "Lara macht Kompliment",
+            "id": "KomplimentKonsequenzNeg"
+        },
+        "btndec1": {
+            "content": "Lara macht kein Kompliment",
+            "id": "KomplimentKonsequenzPos"
+        },
+        "popup": {
+            "content": "Sam appreciates this",
+            "thumb": "img/icon.jpg"
+        },
         "salara": "1"
+    },
+    "KleidungKonsequenzNeg": {
+        "content": "KleidungKonsequenzNeg Text bis zur Komplimententscheidung. <br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata",
+        "flag": "true",
+        "image": "/img/sam_dress.png",
+        "btndec1": {
+            "content": "Lara macht Kompliment",
+            "id": "KomplimentKonsequenzNeg"
+        },
+        "btndec1": {
+            "content": "Lara macht kein Kompliment",
+            "id": "KomplimentKonsequenzPos"
+        },
+        "popup": {
+            "content": "Sam will remember this",
+            "thumb": "img/icon.jpg"
+        },
+        "salara": "-1"
     }
-}    
+
+}
