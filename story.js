@@ -610,7 +610,7 @@ var set = squiffy.set;
 
 
 squiffy.story.start = 'start';
-squiffy.story.id = 'd22d38ea3f';
+squiffy.story.id = '1141c1cabd';
 squiffy.story.sections = {
 	'_default': {
 		'text': "",
@@ -628,7 +628,7 @@ squiffy.story.sections = {
 		'attributes': ["carkiss"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/500/200\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -650,13 +650,16 @@ squiffy.story.sections = {
 		'attributes': ["greetingfail"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/250/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
 	'Greetingfail no': {
 		'text': "<p>Greetingfailtext NO mit zusätzlichem <a class=\"squiffy-link link-passage\" data-passage=\"Bildlink\" role=\"link\" tabindex=\"0\">Bildlink</a></p>\n<p>{Greetingfail more}</p>",
 		'passages': {
+			'Bildlink': {
+				'text': "<p><img src=\"http://placekitten.com/623/300\" class=\"img-responsive\" /></p>",
+			},
 		},
 	},
 	'Greetingfail more': {
@@ -669,7 +672,7 @@ squiffy.story.sections = {
 		'attributes': ["antonia"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/800/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -683,7 +686,7 @@ squiffy.story.sections = {
 		'attributes': ["clothes","number1 = 1"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/344/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -692,7 +695,7 @@ squiffy.story.sections = {
 		'attributes': ["number1 = 0"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/566/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -701,7 +704,7 @@ squiffy.story.sections = {
 		'attributes': ["compliment","number2 = 0"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/843/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -726,7 +729,7 @@ squiffy.story.sections = {
 		'text': "<p>ComplimenttextNO bis zur Samstoryentscheidung mit zusätzlichem <a class=\"squiffy-link link-passage\" data-passage=\"Bildlink\" role=\"link\" tabindex=\"0\">Bildlink</a></p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Samstory yes\" role=\"link\" tabindex=\"0\">Samstory yes</a> <a class=\"squiffy-link link-section\" data-section=\"Samstory no\" role=\"link\" tabindex=\"0\">Samstory no</a></p>",
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/277/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -742,7 +745,7 @@ squiffy.story.sections = {
 		},
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/532/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -758,7 +761,7 @@ squiffy.story.sections = {
 		},
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/122/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
@@ -807,7 +810,7 @@ squiffy.story.sections = {
 		'attributes': ["hisao"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/645/300\" class=\"img-responsive\" /></p>",
 			},
 		},
 	},
