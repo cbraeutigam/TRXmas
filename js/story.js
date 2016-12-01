@@ -303,7 +303,7 @@ var squiffy = {};
         var sectionCount = squiffy.get('_section-count') + 1;
         squiffy.set('_section-count', sectionCount);
         var id = 'squiffy-section-' + sectionCount;
-        currentSection = jQuery('<div/>', {
+        currentSection = jQuery('<div class="section" />', {
             id: id,
         }).appendTo(squiffy.ui.output);
         squiffy.set('_output-section', id);
@@ -312,7 +312,7 @@ var squiffy = {};
     squiffy.ui.write = function(text) {
         screenIsClear = false;
         scrollPosition = squiffy.ui.output.height();
-        currentSection.append(jQuery('<div/>').html(squiffy.ui.processText(text)));
+        currentSection.append(jQuery('<div class="inner-section" />').html(squiffy.ui.processText(text)));
         squiffy.ui.scrollToEnd();
     };
 
@@ -619,7 +619,7 @@ squiffy.story.sections = {
 		},
 	},
 	'start': {
-		'text': "<p>Einleitungstext bis zur Entscheidung Carkiss</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Carkiss yes\" role=\"link\" tabindex=\"0\">Carkiss yes</a> <a class=\"squiffy-link link-section\" data-section=\"Carkiss no\" role=\"link\" tabindex=\"0\">Carkiss no</a></p>",
+		'text': "<p>Einleitungstext bis zur Entscheidung Carkiss</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Carkiss yes\" role=\"link\" tabindex=\"0\">Carkiss yes</a> <a class=\"squiffy-link link-section\" data-section=\"Carkiss no\" role=\"link\" tabindex=\"0\" onClick=\"ga('send', 'event', 'Button', 'klick', 'Carkiss_no' ,1);\">Carkiss no</a></p>",
 		'passages': {
 		},
 	},
@@ -628,7 +628,7 @@ squiffy.story.sections = {
 		'attributes': ["carkiss"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/500/200\" class=\"img-responsive\" /></p>",
+				'text': "<img src=\"http://placekitten.com/500/200\" class=\"img-responsive render\" />",
 			},
 		},
 	},
@@ -636,7 +636,7 @@ squiffy.story.sections = {
 		'text': "<p>Carkisstext NO mit zusätzlichem <a class=\"squiffy-link link-passage\" data-passage=\"Bildlink\" role=\"link\" tabindex=\"0\">Bildlink</a></p>\n<p>{Carkiss more}</p>",
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/200/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/200/300\" class=\"img-responsive render\" /></p>",
 			},
 		},
 	},
@@ -650,7 +650,7 @@ squiffy.story.sections = {
 		'attributes': ["greetingfail"],
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/250/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/250/300\" class=\"img-responsive render\" /></p>",
 			},
 		},
 	},
@@ -658,7 +658,7 @@ squiffy.story.sections = {
 		'text': "<p>Greetingfailtext NO mit zusätzlichem <a class=\"squiffy-link link-passage\" data-passage=\"Bildlink\" role=\"link\" tabindex=\"0\">Bildlink</a></p>\n<p>{Greetingfail more}</p>",
 		'passages': {
 			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/623/300\" class=\"img-responsive\" /></p>",
+				'text': "<p><img src=\"http://placekitten.com/623/300\" class=\"img-responsive render\" /></p>",
 			},
 		},
 	},
