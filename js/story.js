@@ -610,6 +610,7 @@ var set = squiffy.set;
 
 
 squiffy.story.start = 'start';
+squiffy.story.id = 'c4f6a5f0e7';
 squiffy.story.sections = {
 	'_default': {
 		'text': "",
@@ -889,9 +890,6 @@ squiffy.story.sections = {
 			squiffy.story.go(res);
 		},
 		'passages': {
-			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/532/300\" class=\"img-responsive\" /></p>",
-			},
 		},
 	},
 	'Tool no': {
@@ -905,9 +903,6 @@ squiffy.story.sections = {
 			squiffy.story.go(res);
 		},
 		'passages': {
-			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/122/300\" class=\"img-responsive\" /></p>",
-			},
 		},
 	},
 	'Help Sam': {
@@ -921,9 +916,6 @@ squiffy.story.sections = {
 			squiffy.story.go(res);
 		},
 		'passages': {
-			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/532/300\" class=\"img-responsive\" /></p>",
-			},
 		},
 	},
 	'Help Hisao': {
@@ -937,9 +929,6 @@ squiffy.story.sections = {
 			squiffy.story.go(res);
 		},
 		'passages': {
-			'Bildlink': {
-				'text': "<p><img src=\"http://placekitten.com/122/300\" class=\"img-responsive\" /></p>",
-			},
 		},
 	},
 	'ResultH_10': {
