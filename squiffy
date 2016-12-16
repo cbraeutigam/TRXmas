@@ -1,0 +1,233 @@
+@title New Game
+
+@set not carkiss
+@set not greetingfail
+@set not antonia
+@set not hisao
+@set not clothes
+@set not compliment
+@set not samstory
+
+@start start
+
+[[start]]:
+Einleitungstext bis zur Entscheidung Carkiss
+
+[[Carkiss yes]] [[Carkiss no]]
+
+[[Carkiss yes]]:
+@set carkiss
+
+Carkisstext YES mit zusätzlichem [Bildlink]
+
+{Carkiss more}
+
+[Bildlink]:
+<img src="http://placekitten.com/500/200" class="img-responsive" />
+
+[[Carkiss no]]:
+
+Carkisstext NO mit zusätzlichem [Bildlink]
+
+{Carkiss more}
+
+[Bildlink]:
+<img src="http://placekitten.com/200/300" class="img-responsive" />
+
+[[Carkiss more]]:
+Mehr Text bis zur Entscheidung Greetingfail
+
+[[Greetingfail yes]] [[Greetingfail no]] 
+
+
+[[Greetingfail yes]]:
+@set greetingfail
+
+Greetingfailtext YES mit zusätzlichem [Bildlink]
+
+{Greetingfail more}
+
+[Bildlink]:
+<img src="http://placekitten.com/250/300" class="img-responsive" />
+
+[[Greetingfail no]]:
+
+Greetingfailtext NO mit zusätzlichem [Bildlink]
+
+{Greetingfail more}
+
+[Bildlink]:
+<img src="http://placekitten.com/623/300" class="img-responsive" />
+
+[[Greetingfail more]]:
+Mehr Text bis zur Entscheidung H/A
+
+[[Antonia]] [[Hisao]] 
+
+
+[[Antonia]]:
+@set antonia
+
+Antoniatext bis zur Clothesentscheidung mit zusätzlichem [Bildlink]
+
+{Antonia more}
+
+[Bildlink]:
+<img src="http://placekitten.com/800/300" class="img-responsive" />
+
+[[Antonia more]]:
+Zimmertext blablabla 
+
+{if greetingfail: mit einem Zusatz wegen GREETINGFAIL}
+
+[[Clothes yes]] [[Clothes no]] 
+
+
+[[Clothes yes]]:
+@set clothes
+@set number1 = 1
+
+ClothestextYES bis zur Complimententscheidung mit zusätzlichem [Bildlink]
+
+[[Compliment yes]] [[Compliment no]] 
+
+[Bildlink]:
+<img src="http://placekitten.com/344/300" class="img-responsive" />
+
+[[Clothes no]]:
+@set number1 = 0
+
+ClothestextNO bis zur Complimententscheidung mit zusätzlichem [Bildlink]
+
+[[Compliment yes]] [[Compliment no]] 
+
+[Bildlink]:
+<img src="http://placekitten.com/566/300" class="img-responsive" />
+
+
+[[Compliment yes]]:
+@set compliment
+@set number2 = 0
+
+ComplimenttextYES bis zur Kommentarentscheidung mit zusätzlichem [Bildlink]
+
+[[Samstory yes]] [[Samstory no]] 
+
+[Bildlink]:
+<img src="http://placekitten.com/843/300" class="img-responsive" />
+
+
+[[Compliment no]]:
+@set number2 = 1
+    var nr1 = squiffy.get("number1");
+    var nr2 = squiffy.get("number2");
+    var res = "Result_" + nr1 + nr2;
+    if(res == "Result_11") {
+        squiffy.story.go(res);
+    }
+    else {
+        squiffy.story.go("Compliment more");
+    }
+
+[[Compliment more]]:
+ComplimenttextNO bis zur Samstoryentscheidung mit zusätzlichem [Bildlink]
+
+[[Samstory yes]] [[Samstory no]]
+
+[Bildlink]:
+<img src="http://placekitten.com/277/300" class="img-responsive" />
+
+
+[[Samstory yes]]:
+@set samstory
+@set number3 = 0
+    var nr1 = squiffy.get("number1");
+    var nr2 = squiffy.get("number2");
+    var nr3 = squiffy.get("number3");
+    var res = "Result_" + nr1 + nr2 + nr3;
+    squiffy.story.go(res);
+
+[Bildlink]:
+<img src="http://placekitten.com/532/300" class="img-responsive" />
+
+
+[[Samstory no]]:
+@set number3 = 1
+    var nr1 = squiffy.get("number1");
+    var nr2 = squiffy.get("number2");
+    var nr3 = squiffy.get("number3");
+    var res = "Result_" + nr1 + nr2 + nr3;
+    squiffy.story.go(res);
+
+[Bildlink]:
+<img src="http://placekitten.com/122/300" class="img-responsive" />
+
+[[Samstory more]]:
+Samstory/No Samstory text blabalbla 
+
+
+[[Result_101]]:
+{Samstory more}
+
+Sam scheucht A aus der Kammer<br/>
+mürrisch wegen As Kritik an Sams Wahl<br/>
+aber <3 Lara im Kleid<br/>
+redet Lara gut zu
+
+[[Result_100]]:
+{Samstory more}
+
+Sam und A diskutieren wegen Laras Kleidung<br/>
+Lara : Do I have a say in this?<br/>
+A + Sam : No
+
+[[Result_011]]:
+{Samstory more}
+
+Sam überzeugt A, Lara Privatspähre zu geben<br/>
+macht Lara in Kleid Kompliment<br/>
+küsst sie ohne dass A es sieht
+
+[[Result_010]]:
+{Samstory more}
+
+Sam zieht Lara BH aus und steckt sie in Kleid während A beschäftigt ist<br/>
+Stichelei: wenigstens hat Lara jetzt was passendes an<br/>
+
+[[Result_001]]:
+{Samstory more}
+
+Sam überzeugt A, Lara Privatspähre zu geben<br/>
+Stichelei: Lara mag As Kleider eh mehr als was Sam anbot
+
+[[Result_000]]:
+{Samstory more}
+
+Sam hilft Lara ins Kleid zu stecken<br/>
+Stichelei: Lara's rags, Lara mag As Zeug eh mehr als Sams<br/>
+zieht Lara BH aus in Anwesenheit von A<br/>
+A kommentiert Lara's Oberweite wegen Model
+
+[[Result_11]]:
+ComplimenttextNO und Übergang zur nächsten Szene
+
+
+
+
+
+
+
+[[Hisao]]:
+@set hisao
+
+Hisaotext bis zur ersten Entscheidung mit zusätzlichem [Bildlink]
+
+{H more}
+
+[Bildlink]:
+<img src="http://placekitten.com/645/300" class="img-responsive" />
+
+[[Hisao more]]:
+Entscheidungseinleitungstext H
+
+[[Entscheidung ja]] [[Entscheidung nein]]
