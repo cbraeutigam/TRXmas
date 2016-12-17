@@ -140,6 +140,19 @@ a {
     }
 }
 
+.overlay {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-image: url(../img/overlay.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 2px 2px;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 
 .intro {
     display: table;
@@ -148,7 +161,7 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/closeup3.jpg) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -163,7 +176,8 @@ a {
 
     .intro-body {
         display: table-cell;
-        vertical-align: middle;
+        vertical-align: bottom;
+        padding-bottom: 70px;
 
         .brand-heading {
             font-size: 40px;
@@ -275,6 +289,7 @@ a {
     width: 100%;
     padding: 50px 0;
     color: white;
+    position: relative;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;

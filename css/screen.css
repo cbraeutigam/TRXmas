@@ -9092,7 +9092,22 @@ a:hover, a:focus {
   color: white;
 }
 
-/* line 144, ../sass/_index.scss */
+/* line 143, ../sass/_index.scss */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/overlay.png);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 2px 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* line 157, ../sass/_index.scss */
 .intro {
   display: table;
   width: 100%;
@@ -9100,7 +9115,7 @@ a:hover, a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/closeup3.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -9108,39 +9123,40 @@ a:hover, a:focus {
   -o-background-size: cover;
 }
 @media (min-width: 768px) {
-  /* line 144, ../sass/_index.scss */
+  /* line 157, ../sass/_index.scss */
   .intro {
     height: 100%;
     padding: 0;
   }
 }
-/* line 164, ../sass/_index.scss */
+/* line 177, ../sass/_index.scss */
 .intro .intro-body {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: bottom;
+  padding-bottom: 70px;
 }
-/* line 168, ../sass/_index.scss */
+/* line 182, ../sass/_index.scss */
 .intro .intro-body .brand-heading {
   font-size: 40px;
 }
 @media (min-width: 768px) {
-  /* line 168, ../sass/_index.scss */
+  /* line 182, ../sass/_index.scss */
   .intro .intro-body .brand-heading {
     font-size: 100px;
   }
 }
-/* line 176, ../sass/_index.scss */
+/* line 190, ../sass/_index.scss */
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
 @media (min-width: 768px) {
-  /* line 176, ../sass/_index.scss */
+  /* line 190, ../sass/_index.scss */
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
 }
 
-/* line 187, ../sass/_index.scss */
+/* line 201, ../sass/_index.scss */
 .btn-circle {
   width: 70px;
   height: 70px;
@@ -9155,21 +9171,21 @@ a:hover, a:focus {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
-/* line 201, ../sass/_index.scss */
+/* line 215, ../sass/_index.scss */
 .btn-circle:hover, .btn-circle:focus {
   outline: none;
   color: white;
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 211, ../sass/_index.scss */
+/* line 225, ../sass/_index.scss */
 .btn-circle .animated {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
 }
-/* line 219, ../sass/_index.scss */
+/* line 233, ../sass/_index.scss */
 .btn-circle:hover .animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
@@ -9209,22 +9225,23 @@ a:hover, a:focus {
     transform: scale(1);
   }
 }
-/* line 264, ../sass/_index.scss */
+/* line 278, ../sass/_index.scss */
 .content-section {
   padding-top: 100px;
 }
 @media (min-width: 767px) {
-  /* line 264, ../sass/_index.scss */
+  /* line 278, ../sass/_index.scss */
   .content-section {
     padding-top: 250px;
   }
 }
 
-/* line 274, ../sass/_index.scss */
+/* line 288, ../sass/_index.scss */
 .download-section {
   width: 100%;
   padding: 50px 0;
   color: white;
+  position: relative;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
@@ -9233,13 +9250,13 @@ a:hover, a:focus {
   -o-background-size: cover;
 }
 @media (min-width: 767px) {
-  /* line 274, ../sass/_index.scss */
+  /* line 288, ../sass/_index.scss */
   .download-section {
     padding: 100px 0;
   }
 }
 
-/* line 292, ../sass/_index.scss */
+/* line 307, ../sass/_index.scss */
 .btn, .squiffy-link, .squiffy-header-link {
   text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif;
@@ -9251,13 +9268,13 @@ a:hover, a:focus {
   margin: 0 55px;
 }
 
-/* line 303, ../sass/_index.scss */
+/* line 318, ../sass/_index.scss */
 .btn-default, .squiffy-link, .squiffy-header-link {
   border: 1px solid #42DCA3;
   color: #42DCA3;
   background-color: transparent;
 }
-/* line 308, ../sass/_index.scss */
+/* line 323, ../sass/_index.scss */
 .btn-default:hover, .squiffy-link:hover, .squiffy-header-link:hover, .btn-default:focus, .squiffy-link:focus, .squiffy-header-link:focus {
   border: 1px solid #42DCA3;
   outline: none;
@@ -9265,18 +9282,18 @@ a:hover, a:focus {
   background-color: #42DCA3;
 }
 
-/* line 318, ../sass/_index.scss */
+/* line 333, ../sass/_index.scss */
 .banner-social-buttons {
   margin-top: 0;
 }
 @media (max-width: 1199px) {
-  /* line 318, ../sass/_index.scss */
+  /* line 333, ../sass/_index.scss */
   .banner-social-buttons {
     margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
-  /* line 326, ../sass/_index.scss */
+  /* line 341, ../sass/_index.scss */
   .banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
@@ -9284,53 +9301,53 @@ a:hover, a:focus {
   }
 }
 @media (max-width: 767px) {
-  /* line 334, ../sass/_index.scss */
+  /* line 349, ../sass/_index.scss */
   .banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
 }
 
-/* line 342, ../sass/_index.scss */
+/* line 357, ../sass/_index.scss */
 footer {
   padding: 50px 0;
 }
-/* line 345, ../sass/_index.scss */
+/* line 360, ../sass/_index.scss */
 footer p {
   margin: 0;
 }
 
-/* line 350, ../sass/_index.scss */
+/* line 365, ../sass/_index.scss */
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 356, ../sass/_index.scss */
+/* line 371, ../sass/_index.scss */
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 362, ../sass/_index.scss */
+/* line 377, ../sass/_index.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 366, ../sass/_index.scss */
+/* line 381, ../sass/_index.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 371, ../sass/_index.scss */
+/* line 386, ../sass/_index.scss */
 .back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   padding: 1em;
 }
-/* line 377, ../sass/_index.scss */
+/* line 392, ../sass/_index.scss */
 .back-to-top span {
   color: white;
   font-size: 35px;
