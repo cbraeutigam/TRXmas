@@ -1,3 +1,7 @@
+* {
+  @include box-sizing(border-box);
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -39,9 +43,6 @@ p {
 
 a {
     color: #42DCA3;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 
     &:hover,
     &:focus {
@@ -78,7 +79,7 @@ a {
 
             padding: 0;
             background: black;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid #42DCA3;
         }
     }
 
@@ -99,6 +100,10 @@ a {
         &:focus {
             outline: none;
         }
+        
+        &:hover {
+            color: #42DCA3;
+        }
     }
 
     a {
@@ -108,12 +113,11 @@ a {
     .nav {
         li {
             a {
-                -webkit-transition: background 0.3s ease-in-out;
-                -moz-transition: background 0.3s ease-in-out;
-                transition: background 0.3s ease-in-out;
+                font-size: 18px;
+                font-weight: 700;
 
                 &:hover {
-                    color: rgba(255, 255, 255, 0.8);
+                    color: #42DCA3;
                     outline: none;
                     background-color: transparent; 
                 }
@@ -129,7 +133,7 @@ a {
                 outline: none;
 
                 a {
-                    background-color: rgba(255, 255, 255, 0.3);
+                    background-color: #42DCA3;
 
                     &:hover {
                         color: white;
@@ -148,7 +152,7 @@ a {
     background-attachment: fixed;
     background-repeat: repeat;
     background-size: 2px 2px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
     top: 0;
     left: 0;
     z-index: 0;
@@ -161,12 +165,13 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/closeup3.jpg) no-repeat bottom center scroll;
+    background: url(../img/header.jpg) no-repeat;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-position: center;
 
     @media (min-width: 768px) {
 
@@ -177,18 +182,24 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: bottom;
-        padding-bottom: 70px;
+        padding-bottom: 25px;
 
         .brand-heading {
             font-size: 40px;
+            margin-bottom: 15px;
 
             @media (min-width: 768px) {
                 font-size: 100px;
             }
         }
+        
+        .brand-subline {
+            margin-bottom: 0;
+        }
 
         .intro-text {
             font-size: 18px;
+            margin: 0 0 10px;
 
             @media (min-width: 768px) {
                 font-size: 26px;
@@ -199,18 +210,19 @@ a {
 
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin-top: 15px;
-    padding: 7px 16px;
+    padding: 0 10px;
     border: 2px solid white;
     border-radius: 100% !important;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     background: transparent;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out;
+    margin: 0 0 25px;
 
     &:hover,
     &:focus {
@@ -285,12 +297,12 @@ a {
 
 }
 
-.download-section {
+.story-section {
     width: 100%;
     padding: 50px 0;
     color: white;
     position: relative;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/props.jpg) no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -392,5 +404,44 @@ img::-moz-selection {
     span {
         color: white;
         font-size: 35px;
+    }
+}
+
+.shariff {
+    
+    .shariff-button {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #42DCA3;
+        color: #42DCA3;
+        margin: 15px 10px;
+        
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            
+            &:hover {
+                background: #42DCA3;
+                color: #000000;
+            }
+        }
+        .fa {
+            font-size: 35px;
+            padding: 7px;
+        }
+    }
+    .share_text {
+        display: none !important;
+    }
+}
+
+.shoutBoxContainer {
+    
+    #configPanel {
+        input {
+            color: black;
+        }
     }
 }
